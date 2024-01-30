@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <img id="#bannerimage" src="./image10.jpg" /><br/>
+    <button onclick="changeImg('image10.jpg')" >Img 1</button>
+    <button onclick="changeImg('image11.webp')" >Img 2</button>
+    <button onclick="changeImg('image12.webp')" >Img 3</button>
+
+<script>
+
+function changeImg()
+{
+    document.getElementById('bannerimage').src = "./image11.webp";
+
+}
+    // function changeImg(fileName){
+    //     let img = document.querySelectorAll("#bannerimage");
+    //     img.setAttribute('src',fileName);
+    // }
+</script>
+</body>
+</html>
